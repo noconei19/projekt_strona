@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: #23292f;
+    color: white;
+}
+
+main {
+    display: gird;
+    margin: auto;
+    width: 80%;
+}
+
+
+
+
+header {
+    padding: 4em;
+    text-align: center;
+    background-color: #0087e8;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    margin-left: 1em 0 1em 1em 1em;
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    flex-basis: auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+    gap: 1em;
+    flex-basis: auto;
+}
+
+
+
+li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: #47a7ec;
+    display: flex;
+    align-items: center;
+    height: 4em;
+    justify-content: center;
+    padding: 1em 2em 1em 2em;
+    text-align: center;
+    border-radius: 1em;
+    flex-basis: 30%;
+}
+
+a:hover {
+    transition: 0.3s;
+    background-color: #1f6ebd;
+    color: whitesmoke;
+    box-shadow: 3px 3px rgb(31, 29, 29);
+    transform: scale(1.1);
+}
+
+footer {
+    padding: 4em;
+    justify-content: center;
+    text-align: center;
+    background-color: #1b2127;
+    color: white;
+    font-size: 2em;
+}
+
+.article {
+    padding: 5em;
+    background-color: #1f4a69;
+
+    grid-area: article;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "article article"
+        "article article";
+}
+
+/*
+rgb(0, 129, 167)
+rgb(0, 175, 185)
+*/
