@@ -1,21 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 body {
     background-color: #23292f;
-    color: white;
 }
 
+main {
+    display: block;
+    margin: auto;
+}
 
-
-
-
+.container {
+    width: 1000px;
+}
 
 header {
     padding: 4em;
@@ -42,7 +44,6 @@ header img {
     height: 100px;
     justify-content: center;
     margin-left: 1em 0 1em 1em 1em;
-
 }
 
 .menu {
@@ -53,9 +54,8 @@ header img {
 
 nav {
     display: flex;
-    flex-wrap: wrap;
-    padding: 2em;
     flex-basis: auto;
+    padding: 2em;
 }
 
 nav ul {
@@ -66,8 +66,9 @@ nav ul {
     gap: 1em;
     flex-basis: auto;
 }
-
-
+li {
+    width: 10em;
+}
 
 li a {
     text-decoration: none;
@@ -101,8 +102,6 @@ footer {
     font-size: 2em;
 }
 
-
-
 article {
     padding: 5em;
     background-color: #1f4a69;
@@ -116,19 +115,13 @@ article {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-template-rows: auto;
-    grid-template-areas:
+    /* grid-template-areas:
         "article article"
-        "article article";
+        "article article"; */
     width: auto;
-    grid-template:
-        [row1-start] "article header"500px [row1-end] [row2-start] "footer footer footer"500px [row2-end] / auto 50px auto;
-
 }
-
-
-
 /*
 rgb(0, 129, 167)
 rgb(0, 175, 185)
@@ -137,4 +130,34 @@ rgb(0, 175, 185)
 img {
     height: 20em;
     width: 20em;
+}
+.img {
+    height: 7em;
+    width: 7em;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 2em;
+    left: 2em;
+}
+iframe {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+.youtube-video {
+    height: 18em;
+    width: 32em;
+    box-shadow: #1b2127;
+    display: block;
+}
+aside {
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
