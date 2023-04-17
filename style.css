@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -48,6 +49,11 @@ h3 {
     left: 2em;
 }
 
+.img1 {
+    height: 20em;
+    width: 20em;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -68,6 +74,7 @@ nav ul {
     gap: 1em;
     flex-basis: auto;
 }
+
 li {
     width: 10em;
 }
@@ -76,7 +83,7 @@ li a {
     text-decoration: none;
     color: white;
     display: block;
-    background-color: #388cc8;
+    background-color: #47a7ec;
     display: flex;
     align-items: center;
     height: 4em;
@@ -95,6 +102,12 @@ a:hover {
     transform: scale(1.1);
 }
 
+main {
+    display: gird;
+    margin: auto;
+    width: 80%;
+}
+
 footer {
     padding: 4em;
     justify-content: center;
@@ -107,7 +120,20 @@ footer {
 .article {
     padding: 5em;
     background-color: #1f4a69;
-    color: white;
+
+    grid-area: article;
+}
+
+.top {
+    padding: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.topka {
+    margin-bottom: 3em;
+    box-shadow: 10px 10px 5px black
 }
 
 /*
