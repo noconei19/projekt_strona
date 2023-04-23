@@ -120,7 +120,7 @@ footer {
 .article {
     padding: 5em;
     background-color: #1f4a69;
-
+    color: white;
     grid-area: article;
 }
 
@@ -133,7 +133,7 @@ footer {
 
 .topka {
     margin-bottom: 3em;
-    box-shadow: 10px 10px 5px black
+    box-shadow: 10px 10px 5px black;
 }
 
 /*
