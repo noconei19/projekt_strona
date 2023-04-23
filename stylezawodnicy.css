@@ -115,11 +115,22 @@ footer {
 
 .article {
     padding: 5em;
-    background-color: #1f4a69;
+    background-color: #2c3237;
 
     grid-area: article;
 }
-
+.topka {
+    background-color: #2c3237;
+    padding: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+h2 {
+    margin-bottom: 2em;
+}
 /*
 rgb(0, 129, 167)
 rgb(0, 175, 185)
